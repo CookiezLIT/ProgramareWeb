@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Chelsea Registration Form</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+			background-color: #1960b2;
+		}
+		form{
+			max-width: 500px;
+			padding: 10px 20px;
+			background: #9ec4f1;
+			margin: 10 px auto;
+			padding: 20px;
+			background: #9ec4f1;
+			border-radius: 8px;
+			font-family: Georgia, "Times New Roman", Times, serif;
+			display: inline-block;
+			text-align: left;
+			position: relative;
+		}
+		form fieldset{
+			border: solid;
+			border-radius: 4px;
+		}
+		form legend{
+			font-size: 16 px;
+			margin-bottom: 10px;
+		}
+		form label{
+			display: block;
+			margin-bottom: 4px;
+		}
+		form input[type="text"],
+		form input[type="email"],
+		form input[type="password"],
+		form input[type="tel"],
+		form textarea, form datalist {
+			font-family: Georgia, "Times New Roman", Times, serif;
+			border: none;
+			border-radius: 4px;
+			font-size: 15 px;
+			margin: 0;
+			outline: 0;
+			padding: 10px;
+			width: 100%;
+			box-sizing: border-box;
+			-webkit-box-sixing: border-box;
+			-mox-box-sizing: border-box;
+			background-color: white;
+			color: black;
+			-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+			box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+			margin-bottom: 20px;
+		}
+		form input[type="text"]:focus,
+		form input[type="email"]:focus,
+		form input[type="password"]:focus,
+		form input[type="tel"]:focus,
+		form textarea:focus{
+			background: #d2d9dd;
+		}
+		datalist option{
+			background-color: #bbb;
+			padding: 4px;
+			margin-bottom: 1 px;
+			cursor: pointer;
+			text-align: center;
+		}
+		form input[type="checkbox"]{
+			font-family: Georgia, "Times New Roman", Times, serif;
+			font-size: 15 px;
+			margin: 0;
+			outline: 0;
+			padding: 1px;
+			background-color: white;
+			color: black;
+			text-align: center;
+		}
+		form input[type="checkbox"]:hover{
+			background: #d2d9dd;
+		}
+		form .radio{
+			display: flex;
+			margin-top: 10px;
+		}
+		form .checkbox{
+			display: inline-block;
+			margin-top: 10px;
+			text-align: center;
+		}
+		form input[type="reset"],
+		button{
+			  border: none;
+			  color: black;
+			  padding: 10px 20px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 6px 2px;
+			  cursor: pointer;
+		}
+
+		
+		footer{
+			text-align: center;
+			padding: 3px;
+			background-color: #1960b2;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+<br>
+<br>
+	<main>
+		<form action="#">
+			<div class="container">
+				<h3>Register</h3>
+				<p>Please fill in this form to create an account.</p>
+				<fieldset>
+					<legend>Personal Info</legend>
+					<label><b>Firstname:</b></label>
+					<input type="text" placeholder="Enter firstname" name="fname" id="fname" required><br>
+					<label><b>Lastname:</b></label>
+					<input type="text" placeholder="Enter lastname" name="lname" id="lname" required><br>
+					<label><b>Email   :</b></label>
+					<input type="email" placeholder="Enter email" name="email" id="email" required><br>
+					<label><b>Password</b></label>
+					<input type="password" placeholder="Enter password" name="psw" required><br>
+					<label><b>Re-type password</b></label>
+					<input type="password" placeholder="Re-type password" name="psw repeat" required><br>
+					<label><b>Phone number:</b></label>
+					<input type="tel" placeholder="Enter phone number" name="phone" id="phone"><br>
+					<label><b>Why would you like to join us?</b></label>
+					<textarea id="my_story" name="my_story" rows="5" cols="45"></textarea><br>
+				</fieldset>
+				<fieldset>
+					<legend>More about you</legend>
+					<label><b>Choose your favourite player</b></label>
+					<input list="players" name="player" id="player">
+					<datalist id="players">
+						<option value="Mason Mount">
+						<option value="Olivier Giroud">
+						<option value="Eden Hazard">
+					</datalist><br>
+					<div class="checkbox">
+						<label><b>You usually watch these leagues:</b></label><br>
+						<input type="checkbox" id="league1" name="league1" value="Premier League">
+						<label for="league1">Premier league</label><br>
+						<input type="checkbox" id="league2" name="league2" value="UCL">
+						<label for="league2">UEFA Champions League</label><br>
+						<input type="checkbox" id="league3" name="league3" value="UEL">
+						<label for="league3">UEFA Europe League</label><br>
+					</div>
+				</fieldset>
+				<fieldset>
+					<div class="radio">
+						<label><b>I am over 18 years old:</b></label><br>
+						<input type="radio" id="yes" name="age" value="yes">
+						<label for="yes">Yes</label><br>
+						<input type="radio" id="no" name="age" value="no">
+						<label for="no">NO</label><br>
+					</div>
+				</fieldset>
+				<hr>
+				<fieldset>
+					<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+					<button type="submit" class="registerbtn">Register</button>
+					<input type="reset" >
+				</fieldset>
+			</div>
+			<div class="container signin">
+				<p>Already have an account?<a href="./login.html">Sign in</a>.</p>
+			</div>
+		</form>
+	</main>
+	<footer>
+		<p>copyright &copy; nicobalan@chelsea-fb.com</p>
+	</footer>
+	
+</body>
+</html>
