@@ -17,13 +17,27 @@
 		</header>
 		<main>
 			<div class ="wrapper">
-				<nav>
+				<nav role="navigation">
 					<ul>
-						<li><a href ="./firstPage.html">Home</a></li>
-						<li><a href ="#">About</a></li>
-						<li><a href ="./players.html">Players</a></li>
+					  <li><a href ="#">Home</a></li>
+					  <li><a href="#">About</a>
+						<ul class="dropdown">
+							<li><a href ="about.html">About us</a></li>
+							<li><a href="#team">Team</a></li>
+							<li><a href="#matches">Matches</a></li>
+						</ul>
+					  </li>
+					  <li><a href="#">Team</a>
+						<ul class="dropdown">
+							<li><a href ="players.html">Players</a></li>
+							<li><a href = "#">Academy</a></li>
+							<li><a href="#">OnLoan</a></li>
+						</ul>
+					  </li>
+					  <li><a href="signUp.html">Join Us</a></li>
+					  <li><a href ="login.html">Login</a></li>
 					</ul>
-				</nav>
+				  </nav>
 				<section>
 					<h2>Cheers!</h2>
 					<p>Here you will find the history of your favourite football club!</p>
