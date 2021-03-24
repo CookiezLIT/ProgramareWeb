@@ -1,0 +1,17 @@
+.each_option {
+}
+
+    .each_option a {
+        background: url(./images/css_sprites.png) 48px -125px;
+        height: 12px;
+        width: 20px;
+        display: block;
+        color: black;
+        padding: 10px 0 0 0;
+        text-align: left;
+        font-size: 12px;        
+    }
+        .each_option a:hover {
+            background: url(./images/css_sprites.png) 120px -125px;
+            color: red;        
+        }    
