@@ -1,6 +1,7 @@
 body{
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
+	background-color: #e7eff6;
 }
 
 			
@@ -33,6 +34,7 @@ footer{
 #results {
 	font-family: Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
+	margin-top: 30px;
 }
 #results th, #results td{
 	padding: 15px;
@@ -43,9 +45,9 @@ footer{
 nav {
 	font-family: monospace;
 	background-color: #1950ff;
-	position: fixed; /* Set the navbar to fixed position */
-	top: 0; /* Position the navbar at the top of the page */
-	width: 100%; /* Full width */
+	position: fixed; 
+	top: 0; 
+	width: 100%; 
   }
   
   ul {
@@ -88,7 +90,7 @@ nav {
   }
   
   ul li:hover > ul,
-  ul li:focus-within > ul, /* this is the line we add */
+  ul li:focus-within > ul, 
   ul li ul:hover {
 	visibility: visible;
 	opacity: 1;
@@ -109,6 +111,9 @@ nav {
 	width: 100%;
 	text-align: center;
 }
+#results thead{
+	background-color: #1666ba;
+}
 #results td, #results th{
 	border: 1px solid black;
 	padding: 8px;
@@ -123,6 +128,10 @@ img{
 	border-collapse: collapse;
 	width: 100%;
 	text-align: center;
+	background-color: #bedaf7;
+}
+#squad thead{
+	background-color: #368ce7;
 }
 #content_img{
 	 position: relative;
@@ -132,7 +141,7 @@ img{
 	 margin-right: 10px;
 }
 .content_img div{
-	 position: absolute;
+	 position: relative;
 	 bottom: 0;
 	 right: 0;
 	 background: black;
@@ -150,11 +159,77 @@ img{
 
 .content_img:hover div{
 	 width: 150px;
-	 padding: 8px 15px;
+	 padding: 15px 15px;
 	 visibility: visible;
 	 opacity: 0.7; 
 }
 
+section {
+	padding-top: 4rem;
+	width: 50%;
+	margin: auto;
+}
+details[open] summary ~ * {
+  animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details summary {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid black;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 300;
+  list-style: none;
+}
+
+details summary:after {
+  content: "+";
+  color: black;
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 200;
+  transform-origin: center;
+  transition: 200ms linear;
+}
+details[open] summary:after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+details summary {
+  outline: 0;
+}
+details p {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+}
+
+h1,
+h1+p {
+	margin: 30px 15px 0;
+	font-weight: 300;
+}
+h1{
+	text-align: center;
+}
+
+	
 		  
 		  
 footer{
